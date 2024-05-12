@@ -32,7 +32,7 @@ h1 {
     text-align: center;
     align-content: center;
 }
-span {
+.highlight {
     color: red;
 }
 .container {
@@ -50,18 +50,25 @@ span {
     align-content: center;
     padding-bottom: 40px;
 }
-i {
+#trash, #paste {
     position: absolute;
-    right: 20px;
-    bottom: 15px;
     font-size: 20px;
+    cursor: pointer;
+    bottom: 10px;
 }
-.container p{
+#trash {
+    right: 25px;
+}
+#paste {
+    left: 25px;
+}
+
+.p1, .p2{
     position: relative;
     top: 2px;
-    left: 25px;
     font-weight: 600;
     justify-self: left;
+    left: 25px;
 }
 textarea {
     position: relative;
