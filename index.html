@@ -15,11 +15,11 @@
     <div class="mainContainer">
         <div class="container">
             <textarea name="text" id="textArea" placeholder="Paste your text here."></textarea>
-            <textarea readonly name="Output" id="outputArea" placeholder="Output goes here..." ></textarea>
-            <button>Submit</button> 
+            <textarea name="Output" id="outputArea" placeholder="Output goes here..." ></textarea>
+            <button onclick="addLetter()">Submit</button>
             <button class="last">Copy</button>
             <span class="p1" id="p1">Word: 0</span>
-            <span class="p2">Words: 0</span>
+            <span class="p2" id="p2">Word: 0</span>
             <i class="fa fa-clipboard" aria-hidden="true" id="paste"></i>
             <i class="fa fa-trash-o" aria-hidden="true" id="trash"></i>
         </div>
