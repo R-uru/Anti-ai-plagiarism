@@ -13,6 +13,7 @@ body {
     color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+
 }
 header {
     background-color: var(--bgcolor);
@@ -35,12 +36,19 @@ h1 {
 .highlight {
     color: red;
 }
+.mainContainer {
+        margin: 80px auto 90px;  
+        max-width: 1600px;
+        min-height: 600px;
+        /* background-color: red; */
+        padding: 20px;
+}
 .container {
     position: relative;
+    margin: 0px auto;  
     background: var(--bgcolor);
     max-width: 1500px;
     min-height: 600px;
-    margin: 100px auto 90px;
     border-radius: 10px;
     display: grid;
     grid-template-rows: auto-fit 40px;
@@ -115,4 +123,28 @@ footer {
     line-height: 50px;
     padding-left: 30px;
     font-weight: 600;
+}
+
+
+
+@media (max-width: 500px) {
+    .mainContainer {
+        
+    }
+    .container {
+        max-width: 400px;
+    }
+    textarea {
+        height: 200px;
+        font-size: 15px;
+    }
+    button:hover {
+        font-size: 17px;
+    }
+    button {
+        font-size: 15px;
+    }
+    #trash, #paste {
+        font-size: 15px;
+    }
 }
