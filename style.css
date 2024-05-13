@@ -8,10 +8,10 @@
     --text: rgb(0, 0, 0);
 }
 .dark-mode {
-    --text: aliceblue;
+    --text: #e8e7e7;
     --mainbg: #333333;
     --bgcolor: #4e4e4e;
-    --color: #ffffff;
+    --color: #cecece;
     --links: rgb(0, 145, 217);
     }
 
@@ -205,7 +205,7 @@ button:hover {
     text-decoration: none;
     color: var(--text);
 }
-.about, .contacts, .socials, .creator {
+.contacts, .socials, .creator {
     padding: 10px;
 }
 
