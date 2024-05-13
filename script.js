@@ -89,11 +89,25 @@ document.addEventListener('DOMContentLoaded', function(){
             }, 1000);
         }
     }
+    //* Dark mode 🌚
+    document.getElementById("darkModeToggle").addEventListener("click", function() {
+        document.documentElement.classList.toggle("dark-mode");
+        var darkModeEnabled = document.documentElement.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", darkModeEnabled);
+    });
     
-
-
-
-
+    // Check user preference on page load
+    window.addEventListener("load", function() {
+        var darkModePref = localStorage.getItem("darkMode");
+        if (darkModePref && darkModePref === "true") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    });
+    
+    
+    
+    
+    
 });
 
 //! ‎
