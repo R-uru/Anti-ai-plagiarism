@@ -5,27 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/975df08e90.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/GPPT.jpg" type="image/x-icon">
+    <title>Anti-Gpt</title>
 </head>
 <body>
     <header>
         <img src="img/GPPT.jpg" alt="">
         <h1><span class="highlight">DEL</span>-Gpt</h1>
     </header>
+    <div id="copySuccess" class="copy-success">Copy successful!</div>
     <div class="mainContainer">
         <div class="container">
             <textarea name="text" id="textArea" placeholder="Paste your text here."></textarea>
-            <textarea name="Output" id="outputArea" placeholder="Output goes here..." ></textarea>
+            <textarea readonly name="Output" id="outputArea" placeholder="Output goes here..." ></textarea>
             <button onclick="addLetter()">Submit</button>
-            <button class="last">Copy</button>
-            <span class="p1" id="p1">Word: 0</span>
-            <span class="p2" id="p2">Word: 0</span>
+            <button class="last" onclick="copyText()" >Copy</button>
+            <span class="p1" id="p1">Letter: 0</span>
+            <span class="p2" id="p2">Letter: 0</span>
             <i class="fa fa-clipboard" aria-hidden="true" id="paste"></i>
             <i class="fa fa-trash-o" aria-hidden="true" id="trash"></i>
         </div>
     </div>
     <footer>
-        &copy; <span class="highlight">DEL</span>-Gpt - <a href="https://www.facebook.com/ruruonfb" target="_blank">Russell James Mapacpac</a>
+    <div class="details">
+        <div class="grid">
+            <div class="about">
+                <a href="#"><h3>How it works?</h3></a>
+            </div>
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> 0963404****</p>
+                <a href="mailto:ruruondiscord@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> ruruondiscord@gmail.com</a>
+            </div>
+            <div class="socials">
+                <h3>Social Media</h3>
+                <a href="#"><i class="fa fa-github" aria-hidden="true"></i> R-URU</a>
+                <br>
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Russell James</a>
+            </div>
+            <div class="creator">
+                <h3>Creator</h3>
+                &copy; <span class="highlight">DEL</span>-Gpt <br> <a href="https://www.facebook.com/ruruonfb" target="_blank">Russell James Mapacpac</a>
+
+            </div>
+        </div>
+    </div>
     </footer>
     
 </body>

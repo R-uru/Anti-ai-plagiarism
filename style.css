@@ -33,6 +33,21 @@ h1 {
     text-align: center;
     align-content: center;
 }
+
+    /** show copy success  */
+.copy-success {
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-color: rgb(43, 214, 43);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.show {
+    opacity: 1;
+}
+
 .highlight {
     color: red;
 }
@@ -113,22 +128,45 @@ button:hover {
     background-color: var(--highlights);
     font-size: 20px;
 }
-footer {
+.details {  
     background-color: var(--bgcolor);
+    max-height: 500px;
+}
+.grid {
+    font-weight: 600;
+    min-height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: green; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    grid-template-rows: auto-fit;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    /* justify-items: center; */
+    align-items: center;
+    
+}
+.contacts a, .socials a, .creator a {
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+.about, .contacts, .socials, .creator {
+    padding: 10px;
+}
+
+footer {
     position: relative;
     bottom: 0;
-    margin-top: 30px;
-    height: 50px;
-    vertical-align: middle;
-    line-height: 50px;
-    padding-left: 30px;
-    font-weight: 600;
 }
 
 
 
 @media (max-width: 500px) {
     .mainContainer {
+        /* // wjkhkdada */
         
     }
     .container {
