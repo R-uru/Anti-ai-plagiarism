@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
     //! values 🎗️ 
     let p1 = document.getElementById('p1');
     let textArea = document.getElementById('textArea');
@@ -25,7 +25,7 @@
         if (ask){
             document.getElementById("textArea").value = '';
             document.getElementById("outputArea").value = '';
-            updateWordCount(textArea, p1);
+            updateLetterCount(textArea, p1);
             updateWordCount2(outputArea, p2);
         }
     });
@@ -97,4 +97,3 @@
 });
 
 //! ‎
-
