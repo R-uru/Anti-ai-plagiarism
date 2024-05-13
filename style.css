@@ -9,7 +9,7 @@
     margin: 0;
 }
 body {
-    background-color: #f0f0f0;
+    background-color: #dbdada;
     color: #000000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -87,20 +87,30 @@ h1 {
 }
 
 .how {
-    background-color: red;
+    /* background-color: red; */
     min-height: 400px;
     display: flex;
     justify-content: center; 
     align-items: center; 
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    background-color: var(--bgcolor);
+    padding: 60px 0px 60px 0px;
 }
   
 .howContainer {
-    background-color: green;
     min-height: 300px;
     max-width: 1500px;
     width: 100%; 
     margin: 0px 40px 0px 40px;
+    font-weight: 500;
+}
+.howContainer p {
+    padding-left: 15px;
+}
+.howContainer img {
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
 }
   
 .p1, .p2{
@@ -201,5 +211,9 @@ footer {
     }
     #trash, #paste {
         font-size: 15px;
+    }
+    .howContainer img {
+        max-width: 300px;
+        height: auto;
     }
 }
